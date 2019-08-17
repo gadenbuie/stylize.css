@@ -21,29 +21,89 @@ body{
 }
 
 /* Headings */
-h1{
-    font-size: 2em; /* h1 inside section is treated different in some browsers */
-    margin: 0.67em 0;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.67em 0 0.33em 0;
 }
-h2{
-    font-size: 1.5em;
-    margin: 0.83em 0;
+h1 {
+    font-size: 2em;
+    line-height: 1.25;
 }
-h3{
-    font-size: 1.17em;
-    margin: 1em 0;
+
+@media (min-width: 43.75em) {
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.125;
+    }
 }
-h4{
+
+@media (min-width: 56.25em) {
+    h1 {
+        font-size: 3em;
+        line-height: 1.05;
+    }
+}
+h2 {
+    font-size: 1.625em;
+    line-height: 1.15384615;
+  }
+  
+@media (min-width: 43.75em) {
+    h2 {
+        font-size: 2em;
+        line-height: 1.25;
+    }
+}
+
+@media (min-width: 56.25em) {
+    h2 {
+        font-size: 2.25em;
+        line-height: 1.25;
+    }
+}
+h3 {
+    font-size: 1.375em;
+    line-height: 1.13636364;
+  }
+  
+@media (min-width: 43.75em) {
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
+}
+
+@media (min-width: 56.25em) {
+    h3 {
+        font-size: 1.75em;
+        line-height: 1.25;
+    }
+}
+h4 {
+    font-size: 1.125em;
+    line-height: 1.11111111;
+}
+@media (min-width: 43.75em) {
+    h4 {
+        line-height: 1.22222222;
+    }
+}
+h5 {
+    font-size: 1.1em;
+    line-height: 1.11111111;
+}
+@media (min-width: 43.75em) {
+    h5 {
+        line-height: 1.22222222;
+    }
+}
+h6 {
     font-size: 1em;
-    margin: 1.17em 0;
+    line-height: 1.11111111;
 }
-h5{
-    font-size: 0.83em;
-    margin: 1.5em 0;
-}
-h6{
-    font-size: 0.67em;
-    margin: 2em 0;
+@media (min-width: 43.75em) {
+    h6 {
+        line-height: 1.22222222;
+    }
 }
 
 /* Links */
@@ -110,6 +170,10 @@ pre{
     white-space: pre-wrap; 
     word-wrap: break-word; 
 }
+pre code {
+    border: none;
+    background-color: none;
+}
 code, 
 kbd, 
 samp{
@@ -133,8 +197,11 @@ kbd{
 }
 
 /* List items */
-ul, ol{
+ul, ol {
     padding-left: 2em;
+}
+ul li, ol li {
+    line-height: 1.75;
 }
 
 /* Form elements */

@@ -1,6 +1,6 @@
 {
   "name": "stylize.css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A beautiful alternative to CSS resets & normalisers.",
   "main": "stylize.css",
   "scripts": {
@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vasanthv/stylize.css.git"
+    "url": "git+https://github.com/gadenbuie/stylize.css.git"
   },
   "keywords": [
     "stylize.css",
     "css",
     "resets"
   ],
-  "author": "Vasanth V",
+  "author": ["Vasanth V", "Garrick Aden-Buie"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vasanthv/stylize.css/issues"
+    "url": "https://github.com/gadenbuie/stylize.css/issues"
   },
-  "homepage": "https://github.com/vasanthv/stylize.css#readme",
+  "homepage": "https://github.com/gadenbuie/stylize.css#readme",
   "devDependencies": {
     "uglifycss": "0.0.28"
   }
